@@ -1,0 +1,440 @@
+
+/*CSS DE HEADER */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+   
+}
+body{
+    background: #151515;
+    font-family: 'Fredoka One', cursive;
+    font-size: 22px;
+    padding-top: 20px;
+}
+header{
+    background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    box-shadow: 5px 5px 20px #881600;
+    z-index: 99;
+}
+.menu{
+
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: right;
+  
+    
+}
+.menu .logo{
+    display: flex;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    vertical-align: top;
+    height: 130px;   
+    border-radius: 12px; 
+}
+.menu .btn-menu{
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;    
+}
+
+.menu .logo:hover{
+    background: #881600;
+}
+
+.menu .enlaces{
+    display: inline-block;
+    text-align: right;
+}
+
+.menu .enlaces a{
+    color: #6a6a6a;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;   
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.menu .enlaces i{
+    margin-right: 5px;
+}
+.menu .enlaces a:hover{
+    background: #881600;
+    color:#070D0D;
+    border-radius: 50px;
+}
+/*CSS DE CARDS*/
+.titulo{
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    color: #881600;
+    font-size: 50px;
+    margin-top: -70px;
+    font-weight: 100;  
+  }
+
+  .container{
+    
+      height: 487px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 10px 0px 0px 0px;
+         
+  }
+  .container .card{
+      width: 430px;
+      height: 765px;
+      border-radius: 57px;
+      box-shadow: 0 5px 10px #f4f6ff;
+      overflow: hidden;
+      margin: 35px;
+      text-align: center;
+      transition: all 0.25s;
+      margin-top: 10px;    
+  }
+.container .card img{
+    height:590px ;
+    width: 430px;
+}
+  .container .card:hover{
+      transform: translateY(-15px);
+      box-shadow: 0px 12px 16px rgba(136,22,0) ;   
+}
+.container .card h4{
+    font-weight: 600;
+}
+.container .card p{
+    color: white;
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family:'Fredoka One', cursive ;
+}
+ h4{
+   font-size: 25px;
+    color: #6a6a6a;
+   font-family: 'Fredoka One', cursive;
+}
+
+h6{
+    color: rgba(136,22,0);
+    font-size: 18px;
+    font-size: 'Times New Roman', Times, serif;;
+}
+
+/* CSS DE FORMULARIO*/
+
+.form-register{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: 414px 109px 0px 0px;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    float: right;
+    box-shadow: 3px 3px 18px #f4f6ff ;
+}
+
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgba(136,22,0) ;
+}
+.controls{
+    width: 100%;
+    background:#24303c ;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;  
+    line-height: 40px;
+}
+.form-register a{
+    color: white;
+    text-decoration: none;
+}
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.form-register .botons{
+    width: 100%;
+    background: #881600;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+/*CSS DE SLIDER */
+
+.content-all{
+    width: 1000px;
+    height: 524px;
+    position: relative;
+    display: flex;
+    margin: 0px 0px 0px 104px;
+    border-radius: 20px;
+    overflow: hidden;
+    perspective: 800px;
+    box-shadow: 3px 3px 18px #f4f6ff ;   
+}
+.content-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translatex(-100%) rotatey(360deg);
+    opacity: 1;
+    transition: all 1s;  
+}
+#img1{
+    transform: translatex(0);
+    opacity: 1;
+}
+.content-img:target{
+    transform:translatex(0) rotatex(0deg);
+    opacity: 1;
+}
+
+.content-img img{
+    width: 100%;
+    height: 100%;
+}
+
+ .icon-circle-left{
+    position: absolute;
+    margin-top: 250px;
+    left: 0;
+    font-size: 40px;
+    text-decoration: none;
+    color: #6a6a6a;
+ }
+    .icon-circle-left:hover{
+    background: #070D0D;
+    color:#881600;
+    border-radius: 50px;
+ }
+
+ .icon-circle-right{
+    position: absolute;
+   margin-top: 250px;
+   right: 0;
+   font-size: 40px;
+   text-decoration: none;
+   color: #6a6a6a;
+
+ }
+ .icon-circle-right:hover{
+    background: #070D0D;
+    color:#881600;
+    border-radius: 50px;
+ }
+
+ /*CSS FOOTER */
+
+  .contenedor-footer{
+    background-image: linear-gradient(to right bottom, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000, #000000);
+     width: 100%;
+     height: 330px;
+     box-shadow: 0px -5px 15px #881600; 
+     margin-top: 70px;
+     display: flex;
+     justify-content: space-between;
+
+ }
+
+ .img-footer{
+     width: 550px;
+     height: 330px;
+     border-radius: 10px;
+ }   
+
+ div a h3{
+     font-size: 50px;
+     font-family: 'Fredoka One', cursive;
+     margin: 85px 0px 0px 0px;
+     color: #881600;
+ }
+
+ a{
+     text-decoration: none;
+     
+ }
+
+ .logo-footer{
+     width: 85px;
+     height: 125px;
+     padding: 0px;
+     margin: 15px 0px 0px 135px;
+
+ }
+
+ .iconos{
+    font-size: 30px;
+    margin: 150px 100px 0px 0px;
+}
+
+.icon-facebook2{
+    background: white;
+    color: blue;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: auto;
+}
+
+.icon-facebook2:hover{
+    background: blue;
+    color:#f2f2f2;
+    border-radius: 10px;
+}
+
+.icon-instagram{
+    background: #bb3b0e;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: auto;
+}
+
+.icon-instagram:hover{
+    background: #f2f2f2;
+    color:#bb3b0e;
+    border-radius: 10px;
+}
+
+.icon-twitter{ 
+background: white;
+color: #3fc5f0;
+border-radius: 10px;
+padding: 5px;
+margin-right: auto;
+
+}
+.icon-twitter:hover{
+    background: #3fc5f0;
+    color:white;
+    border-radius: 10px;
+}
+
+.icon-youtube{
+    background: white;
+    color: red;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: auto;
+}
+.icon-youtube:hover{
+    background: red;
+    color:white;
+    border-radius: 10px;
+}
+
+.img-hulk3{
+    width: 200px;
+    height: 170px;
+    margin: 85px 140px 0px 0px;
+    border-radius: 90px;
+    box-shadow: 0px 0px 35px rgba(69,93,59);
+ 
+}
+
+@media (max-width:1000px){
+    .menu{
+       background: #000000; 
+       width: 100%;
+
+    }
+
+}
+@media (max-width:1000px){
+        .container{
+           width: 125%;
+           display: grid;
+    
+        }
+ }
+  
+ @media (max-width:1000px){
+    .form-register{
+       display: none;
+    }
+}
+
+  
+@media (max-width:1000px){
+    .titulo{
+        text-align: center;
+        margin: 0px 0px 0px 215px;
+    }
+    
+}
+
+
+@media  (max-width:1000px){
+    .content-all{
+        width: 105%;
+        height: 500px;
+        margin-top: 154%;
+
+    }
+    
+}
+
+@media  (max-width:1000px){
+    .contenedor-footer{
+        width: 124%;
+        
+    }
+}
+@media (max-width:1000px){
+    .img-footer{
+        width: 318px;
+        height: 200px;
+        margin-top: 64px;
+    }
+}
+
+@media (max-width:1000px){
+    .logo-footer{
+     display: none;
+    }
+}
+
+@media (max-width:1000px){
+    div a h3{
+    display: none;
+    }
+}
+
+
+
+
